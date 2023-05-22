@@ -33,14 +33,16 @@ function calcularMedia(aluno, nota1, nota2) {
 
     parseFloat(resultado = (this.nota1 + this.nota2) / 2)
     if (resultado >= 7) {
-        alert(`A média ${aluno} foi: ${resultado}. APROVADO `)
+        alert(`A média de ${aluno} foi: ${resultado}. Resultado: APROVADO `)
     } else {
-        alert(`A média ${aluno} foi: ${resultado}. REPROVADO `)
+        alert(`A média de ${aluno} foi: ${resultado}. Resultado: REPROVADO `)
     }
 }
 
+let quantidade = prompt("Deseja cadastrar quantos alunos?")
+
 // ENTRADA DE DADOS
-for ( let c = 0; c <= 1; c++ ) {
+for ( let c = 0; c < quantidade; c++ ) {
     let aluno = prompt("Digite o primeiro nome: ")
     let nota1 = parseFloat(prompt("Digite a primeira nota: "))
     let nota2 = parseFloat(prompt("Digite a segunda nota: "))
@@ -56,7 +58,8 @@ console.log(notas1)
 console.log(notas2)
 
 // RESULTADO
-for ( let c = 0; c <= 1; c++ ) {
-    let calculo = new calcularMedia(alunos[c], notas1[c], notas2[c])
-    calculo()
+for ( let c = 0; c < quantidade; c++ ) {
+    let calculo = []
+    calculo[c] = new calcularMedia(alunos[c], notas1[c], notas2[c])
+    
 }
