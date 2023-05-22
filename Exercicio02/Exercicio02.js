@@ -50,12 +50,12 @@ for ( let c = 0; c < quantidade; c++ ) {
     alunos[c] = aluno
     notas1[c] = nota1
     notas2[c] = nota2
-}
 
-// TESTE DE VARIÁVEIS NO CONSOLE
-console.log(alunos)
-console.log(notas1)
-console.log(notas2)
+    // TESTE DE VARIÁVEIS NO CONSOLE
+    console.log(alunos[c])
+    console.log(notas1[c])
+    console.log(notas2[c])
+}
 
 // RESULTADO
 for ( let c = 0; c < quantidade; c++ ) {
